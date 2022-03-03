@@ -1,0 +1,397 @@
+/*________________________________________________________________________________________________________________________________________________________*/
+
+                                                                     /*TOUTES LES PAGES*/
+/*________________________________________________________________________________________________________________________________________________________*/
+
+body
+{
+	background-image: url("img/fond.jpg");	
+}
+
+/*_______________________________________________________________________________*/
+
+                                                 /*LE TEXTE*/
+/*_______________________________________________________________________________*/
+
+/*Police d'écriture*/
+p, h1, h2, nav li 
+{
+ font-family: 'Lato', sans-serif;
+}
+
+/*les paragraphes*/
+p
+{
+  font-size: 15px;
+}
+
+
+/*______________________________________________________________________________*/
+
+                                                 /*MENU*/
+/*______________________________________________________________________________*/
+
+/*MENU PARENT*/
+.menu nav ul
+{
+	list-style-type: none;
+
+background-color: black;
+
+display: flex;
+	 flex-direction: row;
+	 justify-content: flex-end;
+
+padding: 10px;
+}
+
+/*ELEMENT DU MENU*/
+.menu nav li 
+{
+    margin-right: 15px;
+
+    border: white 1px solid;
+
+    color: white;
+    font-size: 20px;
+
+    padding: 7px;
+}
+
+/*SURVOL DU MENU*/
+.menu nav li:hover 
+{
+	color: white;
+}
+
+a:visited
+{
+	color: orangered;
+}
+
+/*BOUTTON CONTACT*/
+.cont 
+{
+	color: white;
+	background-color: slateblue;
+	padding: 5px;
+}
+
+/*___________________________________________________________________________________*/
+
+                                            /*ENTETE PRINCIPAL*/
+/*___________________________________________________________________________________*/
+
+/*ENTETE PRINCIPAL - (fond)*/
+.teutax
+{
+	height: 200px;
+	background-image: url("img/entete.png");
+}
+
+/*LOGO*/
+#logo img
+{
+	width: 100px;
+	height: 100px;
+
+	position: static;
+	 top: 50px;
+	 right: 20px;
+}
+
+/*________________________________________________________________________________________________________________________________________________________*/
+
+                                                                     /*PAGE ACCUEIL*/
+/*________________________________________________________________________________________________________________________________________________________*/
+
+/*ACCUEIL - (fond principal)*/
+.homecont
+{
+	max-width: 1500px;
+	height: 700px;
+
+	border: white 3px solid;
+	background-color: white;
+
+	margin-top: 20px;
+}
+
+/*ACCUEIL - (titre,video)*/
+.homecont h2, video
+{	
+  color: royalblue;
+  text-align: center;
+}
+
+/*ACCUEIL - (texte)*/
+.homecont p
+{
+ text-align: left;
+  padding-left: 215px;
+}
+
+/*____________________________________________________*/
+
+/*ACCUEIL - (video)*/
+video
+{
+	max-height: 500px;
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-bottom: 10px;
+}
+
+/*________________________________________________________________________________________________________________________________________________________*/
+
+                                                                     /*PAGE CV*/
+/*________________________________________________________________________________________________________________________________________________________*/
+
+/*PAGE CV - (fond principal)*/
+.cvpage 
+{
+  background-color: white;
+  width: 1330px;
+  max-width: 1330px;
+  height: 1000px;
+}
+
+/*_____________________________*/
+
+
+/*HAUT DU CV - (fond)*/
+.cvhead 
+{
+  background-color: orangered;
+  height: 200px;
+
+  display: flex;
+   flex-direction: column;
+}
+
+/*HAUT DU CV - (texte)*/
+.cvhead h2 p 
+{
+  max-width: 700px;
+  text-align: left;
+  padding-left: 200px;
+  margin: 10px;
+}
+
+/*HAUT DU CV - (photo)*/
+.cvhead img 
+{
+  width: 250px;
+  position: relative;
+   top: -150px;
+   left: -30px;
+}
+
+/*_____________________________*/
+
+/*HARSKILLS - (fond)*/
+.hardsk
+{
+	background-color: slateblue;
+  margin-left: 343px;
+  display: flex;
+   flex-direction: column;
+   padding-bottom: 20px;
+}
+
+/*HARSKILLS - (titre)*/
+.hardsk h2
+{
+ padding-left: 30px;
+}
+
+/*HARSKILLS - (sous-titre)*/
+.hardsk p {
+	padding-left: 10px;
+}
+
+/*HARDSKILLS - (menu,liste)*/
+.hardsk ul li 
+{
+  font-size: 18px;
+}
+
+/*HARDSKILLS - (groupe icones)*/
+.icohardsk 
+{
+  padding-left: 20px;
+}
+
+/*HARDSKILLS - (icones)*/
+.icohardsk img 
+{
+  width: 30px;
+}
+
+
+/*_____________________________*/
+
+/*COORDONNES DU CV - (fond)*/
+.coord 
+{
+  background-color: greenyellow;
+  height: 799px;
+  width: 332px;
+  display: flex;
+   flex-direction: column;
+  margin-top: -263px;
+}
+
+
+/*COORDONNES DU CV - (titre)*/
+.coord h2 
+{
+  padding-left: 30px;
+  padding-top: 1px;
+}
+
+/*COORDONNES DU CV - (icones,menu,liste)*/
+.icocv 
+{
+  padding-left: 20px;
+  padding-top: 40px;
+}
+
+/*COORDONNES DU CV - (icones)*/
+.icocv img 
+{
+  width: 30px;
+}
+
+/*COORDONNES DU CV - (menu)*/
+.icocv ul 
+{
+  margin-top: -136px;
+}
+
+/*COORDONNES DU CV - (menu,liste)*/
+.icocv ul li 
+{
+  list-style-type: none;
+  font-size: 18px;
+  padding: 7px;
+}
+
+/*_____________________________*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*________________________________________________________________________________________________________________________________________________________*/
+
+                                                                     /*PAGE CONTACT*/
+/*________________________________________________________________________________________________________________________________________________________*/
+
+/*FORMULAIRE*/
+.formu
+{
+	text-align: center;
+	background-color: whitesmoke;
+
+	 padding-top: 5px;
+	 padding-bottom: 5px;
+
+	 margin-top: 50px;
+}
+
+/*________________________________________________________________________________________________________________________________________________________*/
+
+                                                                     /*PAGE MENTIONS LEGALES ET CREDITS*/
+/*________________________________________________________________________________________________________________________________________________________*/
+
+/*FOND PAGE MENTION*/
+.ment
+{
+	background-color: white;
+	
+	margin-top: 50px;
+	padding: 5px 5px 5px 10px;
+}
+
+/*________________________________________________________________________________________________________________________________________________________*/
+
+                                                                     /*PAGE MISE A JOUR*/
+/*________________________________________________________________________________________________________________________________________________________*/
+
+/*FOND PAGE MISE A JOUR*/
+.maj
+{
+	background-color: white;
+	
+	margin-top: 50px;
+	padding: 5px 5px 5px 10px;
+}
+
+/*________________________________________________________________________________________________________________________________________________________*/
+
+                                                                     /*PAGE CERTIFICATIONS*/
+/*________________________________________________________________________________________________________________________________________________________*/
+
+
+/*FOND PAGE CERTIFICATIONS*/
+.certifcont
+{
+	text-align: center;
+	background-color: white;
+	
+	margin-top: 50px;
+	padding: 5px 5px 5px 10px;
+}
+
+/*PAGE CERTIFICATIONS - (titre)*/
+.certifcont h2
+{
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 320px;
+}
+
+/*PAGE CERTIFICATIONS - (image)*/
+.certifcont img
+{
+ width: 700px;
+ height: 500px;
+
+ display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*________________________________________________________________________________________________________________________________________________________*/
+
+                                                                     /*FOOTER*/
+/*________________________________________________________________________________________________________________________________________________________*/
+
+/*FOOTER DE LA PAGE*/
+.foot
+{
+	max-width: 1300px;
+	width: 1300px;
+	height: 100px;
+
+	margin-top: 30px; /*Espacement du bloc footer avec les autres*/
+	padding-left: 30px;
+	padding-top: 10px;
+  
+  background-color: white;
+	border: black 1px solid;
+
+	display: flex;
+	 flex-direction: column;
+}
