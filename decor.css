@@ -25,32 +25,52 @@ p
   font-size: 15px;
 }
 
+/*___________________________________________________________________________________*/
+
+                                            /*ENTETE PRINCIPAL*/
+/*___________________________________________________________________________________*/
+
+/*ENTETE PRINCIPAL - (fond)*/
+.teutax
+{
+	background-image: url("img/entete.png");
+}
+
 
 /*______________________________________________________________________________*/
 
                                                  /*MENU*/
 /*______________________________________________________________________________*/
 
+/*LOGO*/
+#logo img
+{
+	width: 200px;
+	height: 100px;
+
+	position: relative;
+	 top: 65px;
+	 right: 20px;
+}
+
+
 /*MENU PARENT*/
 .menu nav ul
 {
 	list-style-type: none;
+  background-color: black;
 
-background-color: black;
-
-display: flex;
+  display: flex;
 	 flex-direction: row;
 	 justify-content: flex-end;
 
-padding: 10px;
+  padding: 10px;
 }
 
 /*ELEMENT DU MENU*/
 .menu nav li 
 {
     margin-right: 15px;
-
-    border: white 1px solid;
 
     color: white;
     font-size: 20px;
@@ -61,88 +81,77 @@ padding: 10px;
 /*SURVOL DU MENU*/
 .menu nav li:hover 
 {
-	color: white;
+	background-color: blue;
 }
 
+/*SOUS-LIGNAGE DU MENU*/
+.menu a 
+{
+	text-decoration: none;
+}
+
+/*LIEN DEJA VISITER*/
 a:visited
 {
-	color: orangered;
+	color: white;
 }
 
 /*BOUTTON CONTACT*/
 .cont 
 {
-	color: white;
-	background-color: slateblue;
+	background-color: orangered;
 	padding: 5px;
+	border-radius: 20px;
 }
 
-/*___________________________________________________________________________________*/
-
-                                            /*ENTETE PRINCIPAL*/
-/*___________________________________________________________________________________*/
-
-/*ENTETE PRINCIPAL - (fond)*/
-.teutax
-{
-	height: 200px;
-	background-image: url("img/entete.png");
+.cont ul li {
+	color: purple;
 }
 
-/*LOGO*/
-#logo img
-{
-	width: 100px;
-	height: 100px;
-
-	position: static;
-	 top: 50px;
-	 right: 20px;
-}
 
 /*________________________________________________________________________________________________________________________________________________________*/
 
                                                                      /*PAGE ACCUEIL*/
 /*________________________________________________________________________________________________________________________________________________________*/
 
-/*ACCUEIL - (fond principal)*/
-.homecont
+/*ZONE HERO - (fond principal)*/
+.zoneh
 {
 	max-width: 1500px;
-	height: 700px;
-
-	border: white 3px solid;
+	max-height: 600px;
 	background-color: white;
-
 	margin-top: 20px;
+
+	display: flex;
 }
 
-/*ACCUEIL - (titre,video)*/
-.homecont h2, video
+/*________________________________________*/
+
+/*ZONE HERO - (titre)*/
+.zoneh h2
 {	
-  color: royalblue;
-  text-align: center;
+  color: purple;
+  padding-left: 30px;
 }
 
-/*ACCUEIL - (texte)*/
-.homecont p
+/*ZONE HERO - (texte)*/
+.zoneh p
 {
- text-align: left;
-  padding-left: 215px;
+	font-size: 18px;
+  text-align: left;
+  width: 500px;
+
+  padding-top: 40px;
+  padding-left: 30px;
 }
 
-/*____________________________________________________*/
-
-/*ACCUEIL - (video)*/
-video
+/*ZONE HERO - (video)*/
+.zoneh video
 {
+	max-width: 600px;
 	max-height: 500px;
 
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-    padding-bottom: 10px;
+	padding: 50px 0px 20px 120px;
 }
 
 /*________________________________________________________________________________________________________________________________________________________*/
@@ -156,38 +165,37 @@ video
   background-color: white;
   width: 1330px;
   max-width: 1330px;
-  height: 1000px;
+  height: 2000px;
 }
 
 /*_____________________________*/
 
 
-/*HAUT DU CV - (fond)*/
+/*HAUT DU CV - (fond principal)*/
 .cvhead 
 {
   background-color: orangered;
-  height: 200px;
 
   display: flex;
-   flex-direction: column;
+   flex-direction: row-reverse;
+
+   padding-top: 5px;
+   padding-bottom: 10px;
 }
 
 /*HAUT DU CV - (texte)*/
-.cvhead h2 p 
+.cvhead p
 {
-  max-width: 700px;
-  text-align: left;
-  padding-left: 200px;
-  margin: 10px;
+ padding-right: 200px;
 }
 
 /*HAUT DU CV - (photo)*/
 .cvhead img 
 {
   width: 250px;
-  position: relative;
-   top: -150px;
-   left: -30px;
+  height: 140px;
+
+  padding-top: 15px;
 }
 
 /*_____________________________*/
@@ -197,6 +205,7 @@ video
 {
 	background-color: slateblue;
   margin-left: 343px;
+
   display: flex;
    flex-direction: column;
    padding-bottom: 20px;
@@ -213,7 +222,7 @@ video
 	padding-left: 10px;
 }
 
-/*HARDSKILLS - (menu,liste)*/
+/*HARDSKILLS - compétences (menu,liste)*/
 .hardsk ul li 
 {
   font-size: 18px;
@@ -232,64 +241,181 @@ video
 }
 
 
+/*HARDSKILLS - (Tout les icone et bar de progression)*/
+.boxhard
+{
+     display: flex;
+    align-items: center;
+}
+
+/*HARDSKILLS - (Toutes les bar de progression)*/
+.boxhard label
+{
+  padding-left: 11px;
+}
+
+
+/*_____________________________*/
+
+/*EXPERIENCES PROFESSIONNELLES - (fond)*/
+.exp
+{
+	background-color: orange;
+  margin-left: 343px;
+
+  display: flex;
+   flex-direction: column;
+   padding-bottom: 20px;
+}
+
+/*EXPERIENCES PROFESSIONNELLES - (titre)*/
+.exp h2
+{
+ padding-left: 30px;
+}
+
+/*EXPERIENCES PROFESSIONNELLES - (texte)*/
+.exp p 
+{
+	padding-left: 15px;
+}
+
+/*_____________________________*/
+
+/*FORMATIONS PROFESSIONNELLES - (fond)*/
+.forma
+{
+	background-color: seagreen;
+  margin-left: 343px;
+
+  display: flex;
+   flex-direction: column;
+   padding-bottom: 20px;
+}
+
+/*FORMATIONS PROFESSIONNELLES - (titre)*/
+.forma h2
+{
+ padding-left: 30px;
+}
+
+/*FORMATIONS PROFESSIONNELLES - (texte)*/
+.forma p 
+{
+	padding-left: 15px;
+}
+
 /*_____________________________*/
 
 /*COORDONNES DU CV - (fond)*/
 .coord 
 {
   background-color: greenyellow;
-  height: 799px;
-  width: 332px;
+  height: 1484px;
+  width: 340px;
+  margin-top: -1485px;
+
   display: flex;
    flex-direction: column;
-  margin-top: -263px;
 }
 
 
-/*COORDONNES DU CV - (titre)*/
-.coord h2 
+/*COORDONNES DU CV - (Tout les titres principux et leur icone)*/
+.titcv
 {
-  padding-left: 30px;
-  padding-top: 1px;
+	 display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding-left: 20px;
 }
 
-/*COORDONNES DU CV - (icones,menu,liste)*/
-.icocv 
+/*COORDONNES DU CV - (Toutes les titres principaux)*/
+.titcv h2
 {
-  padding-left: 20px;
-  padding-top: 40px;
+  padding-left: 10px;
 }
 
-/*COORDONNES DU CV - (icones)*/
-.icocv img 
+/*COORDONNES DU CV - (Toutes les icones des titres principaux)*/
+.titcv img
 {
   width: 30px;
 }
 
-/*COORDONNES DU CV - (menu)*/
-.icocv ul 
+/*COORDONNES DU CV - (Tout les menu et liste)*/
+.coord ul li 
 {
-  margin-top: -136px;
-}
-
-/*COORDONNES DU CV - (menu,liste)*/
-.icocv ul li 
-{
-  list-style-type: none;
-  font-size: 18px;
-  padding: 7px;
+	font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /*_____________________________*/
 
+/*COORDONNES DU CV - Contact (fond)*/
+.boxcord
+{
+   display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
 
+/*COORDONNES DU CV - Contact (les icones)*/
+.boxcord img 
+{
+	width: 30px;
+}
 
+/*COORDONNES DU CV - Contact (texte)*/
+.boxcord p
+{
+	padding-left: 5px;
+}
 
+/*OORDONNES DU CV - Contact (Les bar de progression)*/
+.boxcord label
+{
+  padding-left: 11px;
+}
 
+/*_____________________________*/
 
+/*COORDONNES DU CV - Softskill (fond)*/
+.soft
+{
+	padding-top: 50px;
+}
 
+/*_____________________________*/
 
+/*COORDONNES DU CV - Langues (fond)*/
+.lang
+{
+	padding-top: 25px;
+}
 
+/*COORDONNES DU CV - Langues (Toute les icones et bar de progression)*/
+.boxlang 
+{
+	 display: flex;
+    align-items: center;
+    padding-left: 24px;
+}
+
+/*COORDONNES DU CV - Langues (Toutes les bar de progression)*/
+.boxlang label
+{
+  padding-left: 11px;
+}
+
+/*_____________________________*/
+
+/*COORDONNES DU CV - Loisir (fond)*/
+.lois
+{
+	padding-top: 50px;
+}
 
 
 
@@ -385,7 +511,7 @@ video
 	width: 1300px;
 	height: 100px;
 
-	margin-top: 30px; /*Espacement du bloc footer avec les autres*/
+	margin-top: 250px; /*Espacement du bloc footer avec les autres*/
 	padding-left: 30px;
 	padding-top: 10px;
   
