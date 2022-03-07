@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="StyleSheet" href="decor.css"/>
+    <title>Home - Accueil</title>
+</head>
+
+ <!-- _________________________________________________________________________________________________ -->
+
+<body>
+
+<!-- POLICE IMPORTER SUR GOOGLE -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+ <!-- _________________________________________________________________________________________________ -->
+ 
+<!-- IMAGE HEADER -->
+<header class="teutax"> 
+ 
+ <!-- LOGO -->
+ <div id="logo">
+    <img src="img/pp.png" alt="Logo" />   
+ </div>
+ 
+ <!-- MENU -->
+ <div class="menu">
+  <nav>
+    <ul>
+    <li> <a href="index.html"> Accueil </a> </li>
+    <li> <a href="certif.html"> Certifications </a> </li>
+    <li> <a href="moncv.html"> Mon CV </a> </li>
+    <li> <a href= "portfolio.html"> Portfolio </a> </li>
+    <li> <a href="contact.html" class="cont"> Contact </a> </li>
+    </ul>
+  </nav>
+ </div>
+
+</header>
+<!-- _________________________________________________________________________________________________ -->
+
+<!-- FORMULAIRE (fond) -->
+<div class="formu">
+<!--- Fomulaire --> 
+<form method="post" action="page.php">
+ 
+<p>
+<!--- Titre de la liste --->
+<label> A propos de quel sujet me contactez vous ? </label> 
+
+<br/>
+
+<!--- Raison de contact --->
+ <select name="raison" id="raison">
+           <option value="prof">Votre profil m'intéresse ! J'aimerai en savoir plus.</option>
+           <option value="sugg">J'ai une suggestion ! Je constate un bug.</option>
+ </select>
+</p>
+
+
+<!--- Coordonnées à renseigner ---> 
+<div class="coord2"> 
+<p>
+  <input type="text" name="nom" id="nom" maxlength="30" placeholder=Nom>
+  <br/>  
+  <input type="text" name="prenom" id="prenom" maxlength="30" placeholder=Prénom>
+  <br/>    
+  <input type="text" name="entreprise" id="entreprise" maxlength="30" placeholder=Entreprise>
+  <br/>   
+  <input type="text" name="mail" id="mail" maxlength="50" placeholder=abc123@exemple.fr>  
+</p>
+</div> 
+
+<!--- Boutton Envoyer ---> 
+ <input type="submit" value="Envoyer !"/>
+
+</form>
+</div>
+
+
+
+<!-- _________________________________________________________________________________________________ -->
+
+<!-- FOOTER DE LA PAGE-->
+<footer> 
+    <div class="foot">
+    <a href="credit.html">Crédits</a>
+    <p>Version Alpha 1.1</p>
+    </div>
+</footer>
+
+
+
+
+</body>
