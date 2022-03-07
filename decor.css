@@ -54,7 +54,7 @@ p
 }
 
 
-/*MENU PARENT*/
+/*MENU - (parent)*/
 .menu nav ul
 {
 	list-style-type: none;
@@ -67,7 +67,7 @@ p
   padding: 10px;
 }
 
-/*ELEMENT DU MENU*/
+/*MENU - (liste du menu)*/
 .menu nav li 
 {
     margin-right: 15px;
@@ -78,7 +78,7 @@ p
     padding: 7px;
 }
 
-/*SURVOL DU MENU*/
+/*MENU - (survol du menu)*/
 .menu nav li:hover 
 {
 	background-color: blue;
@@ -90,13 +90,13 @@ p
 	text-decoration: none;
 }
 
-/*LIEN DEJA VISITER*/
-a:visited
+/*MENU - (lien déjà visiter)*/
+.menu a:visited
 {
 	color: white;
 }
 
-/*BOUTTON CONTACT*/
+/*MENU - (ctc contact)*/
 .cont 
 {
 	background-color: orangered;
@@ -156,6 +156,41 @@ a:visited
 
 /*________________________________________________________________________________________________________________________________________________________*/
 
+                                                                     /*PAGE CERTIFICATIONS*/
+/*________________________________________________________________________________________________________________________________________________________*/
+
+
+/*FOND PAGE CERTIFICATIONS*/
+.certifcont
+{
+	text-align: center;
+	background-color: white;
+	
+	margin-top: 50px;
+	padding: 5px 5px 5px 10px;
+}
+
+/*PAGE CERTIFICATIONS - (titre)*/
+.certifcont h2
+{
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 320px;
+}
+
+/*PAGE CERTIFICATIONS - (image)*/
+.certifcont img
+{
+ width: 700px;
+ height: 500px;
+
+ display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*________________________________________________________________________________________________________________________________________________________*/
+
                                                                      /*PAGE CV*/
 /*________________________________________________________________________________________________________________________________________________________*/
 
@@ -165,7 +200,7 @@ a:visited
   background-color: white;
   width: 1330px;
   max-width: 1330px;
-  height: 2000px;
+  height: 1860px;
 }
 
 /*_____________________________*/
@@ -253,7 +288,6 @@ a:visited
 {
   padding-left: 11px;
 }
-
 
 /*_____________________________*/
 
@@ -403,6 +437,12 @@ a:visited
     padding-left: 24px;
 }
 
+/*COORDONNES DU CV - Langues (Tout les icones)*/
+.boxlang img 
+{
+	width: 30px;
+}
+
 /*COORDONNES DU CV - Langues (Toutes les bar de progression)*/
 .boxlang label
 {
@@ -417,6 +457,42 @@ a:visited
 	padding-top: 50px;
 }
 
+/*_____________________________*/
+
+/*TELECHARGEMENT DU CV - (fond)*/
+.dl
+{
+	background-color: orangered;
+  height: 100px;
+
+	display: flex;
+	 justify-content: center;
+}
+
+/*TELECHARGEMENT DU CV - (texte, lien de téléchargement)*/
+.dltxt
+{
+	font-size: 25px;
+	padding-top: 20px;
+	color: white;
+}
+
+/*________________________________________________________________________________________________________________________________________________________*/
+
+                                                                     /*PAGE PORTFOLIO*/
+/*________________________________________________________________________________________________________________________________________________________*/
+
+/*FORMULAIRE*/
+.portf
+{
+	text-align: center;
+	background-color: whitesmoke;
+
+	 padding-top: 5px;
+	 padding-bottom: 5px;
+
+	 margin-top: 50px;
+}
 
 
 /*________________________________________________________________________________________________________________________________________________________*/
@@ -436,68 +512,6 @@ a:visited
 	 margin-top: 50px;
 }
 
-/*________________________________________________________________________________________________________________________________________________________*/
-
-                                                                     /*PAGE MENTIONS LEGALES ET CREDITS*/
-/*________________________________________________________________________________________________________________________________________________________*/
-
-/*FOND PAGE MENTION*/
-.ment
-{
-	background-color: white;
-	
-	margin-top: 50px;
-	padding: 5px 5px 5px 10px;
-}
-
-/*________________________________________________________________________________________________________________________________________________________*/
-
-                                                                     /*PAGE MISE A JOUR*/
-/*________________________________________________________________________________________________________________________________________________________*/
-
-/*FOND PAGE MISE A JOUR*/
-.maj
-{
-	background-color: white;
-	
-	margin-top: 50px;
-	padding: 5px 5px 5px 10px;
-}
-
-/*________________________________________________________________________________________________________________________________________________________*/
-
-                                                                     /*PAGE CERTIFICATIONS*/
-/*________________________________________________________________________________________________________________________________________________________*/
-
-
-/*FOND PAGE CERTIFICATIONS*/
-.certifcont
-{
-	text-align: center;
-	background-color: white;
-	
-	margin-top: 50px;
-	padding: 5px 5px 5px 10px;
-}
-
-/*PAGE CERTIFICATIONS - (titre)*/
-.certifcont h2
-{
-	text-align: left;
-	padding-top: 20px;
-	padding-left: 320px;
-}
-
-/*PAGE CERTIFICATIONS - (image)*/
-.certifcont img
-{
- width: 700px;
- height: 500px;
-
- display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 /*________________________________________________________________________________________________________________________________________________________*/
 
@@ -520,4 +534,18 @@ a:visited
 
 	display: flex;
 	 flex-direction: column;
+}
+
+/*________________________________________________________________________________________________________________________________________________________*/
+
+                                                                     /*PAGE CREDITS*/
+/*________________________________________________________________________________________________________________________________________________________*/
+
+/*FOND PAGE MENTION*/
+.ment
+{
+	background-color: white;
+	
+	margin-top: 50px;
+	padding: 5px 5px 5px 10px;
 }
