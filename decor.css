@@ -5,7 +5,7 @@
 
 body
 {
-	background-image: url("https://user-images.githubusercontent.com/97023419/156968580-d5fe4fa6-4159-4d75-94ad-2b1a4209bb42.jpg");	
+	background-image: url("img/fond.jpg");	
 }
 
 /*_______________________________________________________________________________*/
@@ -35,7 +35,6 @@ p
 {
 	background-image: url("img/entete.png");
 }
-
 
 /*______________________________________________________________________________*/
 
@@ -71,8 +70,6 @@ p
 .menu nav li 
 {
     margin-right: 15px;
-
-    color: white;
     font-size: 20px;
 
     padding: 7px;
@@ -81,12 +78,13 @@ p
 /*MENU - (survol du menu)*/
 .menu nav li:hover 
 {
-	background-color: blue;
+	background-color: orangered;
 }
 
-/*SOUS-LIGNAGE DU MENU*/
+/*MENU - (lien du menu)*/
 .menu a 
 {
+	color: white;
 	text-decoration: none;
 }
 
@@ -117,7 +115,7 @@ p
 /*ZONE HERO - (fond principal)*/
 .zoneh
 {
-	max-width: 1500px;
+	width: 100%;
 	max-height: 600px;
 	background-color: white;
 	margin-top: 20px;
@@ -174,6 +172,7 @@ p
 .certifcont h2
 {
 	text-align: left;
+
 	padding-top: 20px;
 	padding-left: 320px;
 }
@@ -209,58 +208,71 @@ p
 /*HAUT DU CV - (fond principal)*/
 .cvhead 
 {
-  background-color: orangered;
+  background-color: #004aad;
+  border-bottom: white 1px solid;
 
   display: flex;
    flex-direction: row-reverse;
 
-   padding-top: 5px;
-   padding-bottom: 10px;
-}
-
-/*HAUT DU CV - (texte)*/
-.cvhead p
-{
- padding-right: 200px;
+  padding: 5px 126px 2px 48px;
 }
 
 /*HAUT DU CV - (photo)*/
 .cvhead img 
 {
   width: 250px;
-  height: 140px;
+  height: 125px;
 
   padding-top: 15px;
+  padding-right: 73px;
 }
+
+/*HAUT DU CV - (texte)*/
+.txthead
+{
+ color: white;	
+}
+
 
 /*_____________________________*/
 
 /*HARSKILLS - (fond)*/
 .hardsk
 {
-	background-color: slateblue;
-  margin-left: 343px;
+	background-color: #004aad;
+	border-bottom: white 1px solid;
 
   display: flex;
    flex-direction: column;
    padding-bottom: 20px;
+
+   margin-left: 343px;
 }
 
 /*HARSKILLS - (titre)*/
 .hardsk h2
 {
+ color: white;
+ text-decoration: underline;
+
  padding-left: 30px;
 }
 
 /*HARSKILLS - (sous-titre)*/
-.hardsk p {
-	padding-left: 10px;
+.hardsk p 
+{
+	color: #8bc34a;
+
+	padding-left: 32px;
 }
 
-/*HARDSKILLS - compétences (menu,liste)*/
-.hardsk ul li 
+/*HARDSKILLS - compétences (texte MENU liste)*/
+.hardsk ul
 {
+	color: white;
   font-size: 18px;
+
+  padding-left: 50px;
 }
 
 /*HARDSKILLS - (groupe icones)*/
@@ -279,8 +291,8 @@ p
 /*HARDSKILLS - (Tout les icone et bar de progression)*/
 .boxhard
 {
-     display: flex;
-    align-items: center;
+    display: flex;
+      align-items: center;
 }
 
 /*HARDSKILLS - (Toutes les bar de progression)*/
@@ -294,24 +306,40 @@ p
 /*EXPERIENCES PROFESSIONNELLES - (fond)*/
 .exp
 {
-	background-color: orange;
-  margin-left: 343px;
+	background-color: #004aad;
+	border-bottom: white 1px solid;
 
   display: flex;
    flex-direction: column;
    padding-bottom: 20px;
+
+   margin-left: 343px;
 }
 
 /*EXPERIENCES PROFESSIONNELLES - (titre)*/
 .exp h2
 {
+ color: white;
+ text-decoration: underline;
+
  padding-left: 30px;
 }
 
-/*EXPERIENCES PROFESSIONNELLES - (texte)*/
+/*EXPERIENCES PROFESSIONNELLES - (sous-titre)*/
 .exp p 
 {
-	padding-left: 15px;
+	color: #8bc34a;
+
+	padding-left: 32px;
+}
+
+/*EXPERIENCES PROFESSIONNELLES - (texte MENU liste)*/
+.exp ul 
+{
+	color: white;
+	font-size: 18px;
+
+	padding-left: 49px;
 }
 
 /*_____________________________*/
@@ -319,44 +347,73 @@ p
 /*FORMATIONS PROFESSIONNELLES - (fond)*/
 .forma
 {
-	background-color: seagreen;
-  margin-left: 343px;
+	background-color: #004aad;
+	border-bottom: white 1px solid;
 
   display: flex;
    flex-direction: column;
+
+   margin-left: 343px;
    padding-bottom: 20px;
 }
 
 /*FORMATIONS PROFESSIONNELLES - (titre)*/
 .forma h2
 {
+ color: white;
+ text-decoration: underline;
+
  padding-left: 30px;
 }
 
-/*FORMATIONS PROFESSIONNELLES - (texte)*/
+/*FORMATIONS PROFESSIONNELLES - (sous-titre)*/
 .forma p 
 {
-	padding-left: 15px;
+	color: #8bc34a;
+
+	padding-left: 32px;
 }
 
+/*FORMATIONS PROFESSIONNELLES - (texte MENU liste)*/
+.forma ul 
+{
+	color: white;
+	font-size: 18px;
+
+	padding-right: 40px;
+}
+
+/*FORMATIONS PROFESSIONNELLES - (texte menu LISTE)*/
+.forma ul li
+{
+	color: white;
+	font-size: 18px;
+
+	padding-top: 10px;
+}
 /*_____________________________*/
 
 /*COORDONNES DU CV - (fond)*/
 .coord 
 {
-  background-color: greenyellow;
-  height: 1484px;
-  width: 340px;
-  margin-top: -1485px;
+  background-color: #004aad;
+  border-right: white 1px solid;
 
   display: flex;
    flex-direction: column;
+
+   width: 342px;
+   height: 1644px;
+
+   margin-top: -1663px;
 }
 
 
 /*COORDONNES DU CV - (Tout les titres principux et leur icone)*/
 .titcv
 {
+	 color: white;
+
 	 display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -368,6 +425,9 @@ p
 /*COORDONNES DU CV - (Toutes les titres principaux)*/
 .titcv h2
 {
+	color: white;
+	text-decoration: underline;
+
   padding-left: 10px;
 }
 
@@ -380,7 +440,9 @@ p
 /*COORDONNES DU CV - (Tout les menu et liste)*/
 .coord ul li 
 {
+	color: white;
 	font-size: 16px;
+
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -404,6 +466,8 @@ p
 /*COORDONNES DU CV - Contact (texte)*/
 .boxcord p
 {
+	color: white;
+
 	padding-left: 5px;
 }
 
@@ -463,18 +527,20 @@ p
 .dl
 {
 	background-color: orangered;
-  height: 100px;
+  height: 70px;
 
 	display: flex;
 	 justify-content: center;
+
 }
 
 /*TELECHARGEMENT DU CV - (texte, lien de téléchargement)*/
 .dltxt
 {
+  color: white;
+
 	font-size: 25px;
 	padding-top: 20px;
-	color: white;
 }
 
 /*________________________________________________________________________________________________________________________________________________________*/
@@ -504,7 +570,7 @@ p
 .formu
 {
 	text-align: center;
-	background-color: whitesmoke;
+	background-color: white;
 
 	 padding-top: 5px;
 	 padding-bottom: 5px;
@@ -525,7 +591,7 @@ p
 	width: 1300px;
 	height: 100px;
 
-	margin-top: 250px; /*Espacement du bloc footer avec les autres*/
+	margin-top: 50px; /*Espacement du bloc footer avec les autres*/
 	padding-left: 30px;
 	padding-top: 10px;
   
@@ -548,4 +614,52 @@ p
 	
 	margin-top: 50px;
 	padding: 5px 5px 5px 10px;
+}
+
+
+/*________________________________________________________________________________________________________________________________________________________*/
+
+                                                                     /*MEDIA QUERIES PC*/
+/*________________________________________________________________________________________________________________________________________________________*/
+
+
+/* Si la fênetre fait px ou moins : */
+@media screen and (max-width: 1024px)
+{
+
+	 .foot
+	 {
+     width: 250px;
+	 }
+
+	 /*ENTETE PRINCIPAL - (fond)*/
+   .teutax
+   {
+	  max-width: 1000px;
+   }
+
+	 /*LOGO*/
+   #logo img
+   {
+	  width: 200px;
+	  height: 100px;
+
+	  position: relative;
+	   top: 65px;
+	   left: 100px;
+    }
+
+    /*MENU - (parent)*/
+    .menu nav ul
+    {
+	   list-style-type: none;
+
+     display: flex;
+	    flex-direction: column;
+	    justify-content: flex-end;
+
+     padding: 10px;
+    }
+
+
 }
