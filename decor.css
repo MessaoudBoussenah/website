@@ -627,39 +627,53 @@ p
 @media screen and (max-width: 1024px)
 {
 
-	 .foot
-	 {
-     width: 250px;
-	 }
+  /*LOGO*/
+  #logo img
+  {
+	 width: 200px;
+	 height: 100px;
 
-	 /*ENTETE PRINCIPAL - (fond)*/
-   .teutax
-   {
-	  max-width: 1000px;
-   }
+	 position: relative;
+	  top: 65px;
+	  left: 100px;
+  }
 
-	 /*LOGO*/
-   #logo img
-   {
-	  width: 200px;
-	  height: 100px;
+  /*MENU - (parent)*/
+  .menu nav ul
+ {
+	list-style-type: none;
 
-	  position: relative;
-	   top: 65px;
-	   left: 100px;
-    }
+  display: flex;
+	 flex-direction: column;
+	 justify-content: flex-end;
 
-    /*MENU - (parent)*/
-    .menu nav ul
-    {
-	   list-style-type: none;
+   padding: 10px;
+ }
 
-     display: flex;
-	    flex-direction: column;
-	    justify-content: flex-end;
+  .foot
+	{
+    width: 25%;
+	}
 
-     padding: 10px;
-    }
+	/*___________________________________________*/
+ 
+  
+  /*HOME PAGE - (fond)*/	
+  .zoneh 
+  {
+   display: flex;
+    flex-direction: column;
+  }
+
+
+  /*HOME PAGE - (video)*/	
+  .zoneh video
+  {
+   max-width: 400px;
+
+   padding: 27px 0px 20px 28px;
+  }
+
 
 
 }
