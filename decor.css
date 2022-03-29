@@ -294,6 +294,20 @@ p
 {
    padding-left: 10px;
 }
+
+/*COORDONNEES DU CV - (langue)*/
+.boxlang
+{
+	display: flex;
+	align-items: center;
+   padding-left: 10px;
+}
+
+/*COORDONNEES DU CV - (langue barre de progresssion)*/
+.boxlang label
+{
+   padding-left: 10px;
+}
 /*_____________________________*/
 
 /*HARSKILLS - (fond)*/
